@@ -2,6 +2,8 @@ const prezzoPerKm = 0.21;
 const eta = parseInt(prompt("Inserisci la tua età:"));
 const km = parseFloat(prompt("Inserisci i chilometri da percorrere:"));
 let prezzoBiglietto = km * prezzoPerKm;
+let prezzoBigliettoMinori;
+let prezzoBigliettoOver;
 
 if (eta < 18) {
     prezzoBigliettoMinori = prezzoBiglietto * 0.8; //  sconto del 20% per i minorenni
@@ -22,4 +24,5 @@ if (eta < 18) {
 } else {
     alert("Il prezzo del biglietto è: " + prezzoBiglietto + "€");
 }
+
 
