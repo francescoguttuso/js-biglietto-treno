@@ -1,6 +1,6 @@
 const prezzoPerKm = 0.21;
 const eta = parseInt(prompt("Inserisci la tua età:"));
-const km = parseFloat(prompt("Inserisci i chilometri da percorrere:"));
+const km = parseInt(prompt("Inserisci i chilometri da percorrere:"));
 let prezzoBiglietto = km * prezzoPerKm;
 
 if (eta < 18) {
